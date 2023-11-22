@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ManagementSystem.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManagementSystem.Data
 {
@@ -8,7 +9,8 @@ namespace ManagementSystem.Data
         {
 
         }
+        //defining the creation of table Categories in sql server here.
+        public DbSet<Category> Categories { get; set; }
 
-        
     }
 }
